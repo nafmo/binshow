@@ -1,0 +1,103 @@
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        Ûß          Ûß Ü  Û       Û       Û               TM
+        ÛÜÜÜÜ ÜÜÜÜÜ ÛÜ ÛÜ Û   Û   Û ÜÜÜÜÜ Û Ü Ü ÜÜÜÜ  ÜÜ
+            Û Û   Û Û  Û  Û   Û   Û Û   Û Û Û Û ÛÜÜÛ  ÛÜÜÜÜ
+        ÜÜÜÜÛ ÛÜÜÜÛ Û  ÛÜ ÛÜÜÜÛÜÜÜÛ ÛÜÜÜÛ Û ßÜß ÛÜÜÜÜ ÜÜÜÜÛ
+      Ä     S     O     F     T     W     A     R     E     Ä
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+BinShow v1.21
+
+(c) 1994, 1995: Peter Karlsson
+A Softwolves Software(TM) release in 1995
+
+Dokumentation
+
+  ndam†l
+
+BinShow gjordes i frustration ”ver att inga filvisarprogram kan visa filens inneh†ll bin„rt. Detta kan vara ”nskv„rt t.ex n„r fontfiler ska unders”kas.
+
+  Status
+
+Detta program „r freeware. Det betyder att du har r„tt att fritt sprida och anv„nda detta program. F”rfattaren kvarh†ller dock alla r„ttigheter till programmet, s† det f†r inte modifieras p† n†got s„tt. Se nedan f”r adress. N„r du distribuerar detta program, se till att alla filer beskrivna i sektionen "Medf”ljande filer" nedan medf”ljer.
+
+  Anv„ndarmanual
+
+Kommandoradsformatet f”r BinShow „r:
+
+        BINSHOW [enhet:][s”kv„g]filnamn [[enhet:][s”kv„g]filnamn2]
+eller   BINSHOW /REF
+eller   BINSHOW /?
+
+d„r [enhet:][s”kv„g]filnamn „r namnet p† den fil som ska visas och [enhet:][s”kv„g]filnamn2 „r den fil den ska j„mf”ras med, om du vill (du kan visa en eller tv† filer).
+
+/? visar programmets snabbhj„lpsk„rm.
+
+/REF laddar in en referenstabell i st„llet f”r en fil.
+
+N„r du v„l startat upp programmet och „r inne i filvisaren ser du tv† statusrader, filinneh†ll samt lite information p† sk„rmen. ™versta raden inneh†ller filnamnet. Om du trycker p† mellanslag kommer den i st„llet att inneh†lla rubriker till inneh†llen. Dessa „r: Address = aktuell adress, Binary = bin„r visning (basen 2), Oct. = oktal visning (basen 8), Dec. = decimal visning (basen 10), Hex. = hexadecimal visning (basen 16) samt ASCII vilket visar ASCII-tecknet p† adressen. Dessutom visas i denna kolumn eventuella teckens specialnamn (finns f”r tecknen 0-32 samt 127). Om du visar tv† filer samtidigt kommer b†da filnamnen att visas (utan s”kv„g).
+
+Du rullar listningen en rad upp eller ner med upp-pilen och ner-pilen, en hel sida med Page Up och Page Down, en kilobyte med ctrl samtidigt som Page Up och Page Down eller till b”rjan eller slutet av filen med Home och End. F”r att v„xla bin„rvisningen mellan ettor/nollor och stj„rnor/mellanslag (f”r att visa bilder) trycker du p† Tabb. Programmet avslutas med Escape.
+
+Om du tycker att du ser f”r lite av filen p† sk„rmen kan du, om ditt grafikkort st”der det, byta till ett l„ge med fler rader. P† ett EGA-kort finns 50-radersl„ge och p† VGA 60 rader. Med ANSI.SYS laddad kan du skriva:
+ MODE CON LINES=r COLS=k
+d„r r „r antalet rader och k „r antalet kolumner. Observera att antalet kolumner m†ste vara minst 80.
+
+  Medf”ljande filer
+
+BINSHOW.EXE             Den k”rbara filen
+BINSHOW.DOK             Svensk dokumentation
+BINSHOW.DOC             Engelsk dokumentation
+FILE_ID.DIZ             Kort programbeskrivning
+SOFTWOLV.FRM            Best„llningsformul„r f”r andra Softwolves-
+                        produkter.
+WOLVES.COM              Softwolves programkatalog.
+
+  Avslutningskoder (errorlevels)
+
+F”r n„rvarande finns bara en avslutningskod, n„mligen 1 som s„ger att filen ej kunde l„sas.
+
+  Versionshistoria
+
+ v1.0 BETA den 1994-09-03:
+F”rsta sl„ppta betaversionen.
+
+ v1.1 BETA den 1994-09-13:
+Lade till kontroll av sk„rmstorleken. Programmet stannar f”r l„gen  med sk„rmbredd <> 80. All sk„rmhantering sker nu via direkta BIOS-anrop.
+
+ v1.15 den 1995-01-28:
+Bytte till Martin Kal‚ns MkCrt-unit, plus att jag anv„nder lite av hans k„llkod vilket g”r programmet snyggare, och b„ttre fungerande, och det kan k”ras p† valfri sk„rmbredd. Fixade en felstavning som gav "ACK" namnet "ACH".
+
+ v1.16 den 1995-08-20:
+Filnamnet visas nu p† sk„rmen.
+
+ v1.20 den 1995-09-02:
+Tv† filer kan visas samtidigt, och en referenstabell kan visas.
+
+ v1.21 den 1995-09-22:
+Om du visar tv† filer, kommer b†da filnamnen att visas samtidigt. Vid visning av tv† filer, s† kom End att skriva samma filstorlek p† sk„rmen f”r b†da filerna, detta har fixats.
+
+  Varum„rken och kopieringsr„tt
+
+Jag anv„nder Martin Kal‚ns MkCrt-unit f”r direkt sk„rmskrivning. Om du ”nskar mer information om denna, kontakta honom p† Fidonet 2:201/342.6.
+
+I ”vrigt innehas detta programs kopieringsr„tt (copyright) av Peter Karlsson.
+
+  Tack
+
+Tack till Peter Korkala <Fidonet 2:204/141.5> f”r id‚er p† f”rb„ttringar till programmet.
+
+  Avs„gande av ansvar
+
+DETTA PROGRAM DISTRIBUERAS I BEFINTLIGT SKICK. PROGRAMMERAREN GER INGEN GARANTI, VARKEN UTTRYCKT ELLER IMPLICERAD, F™R FUNKTIONEN AV PROGRAMMET. I INGET FALL SKA PROGRAMMERAREN VARA ANSVARIG F™R NGON SOM HELST SKADA (INKLUDERANDE, UTAN BEGRNSNING TILL, UTEBLIVEN VINST, DRIFTSAVBROTT, F™RLUST AV F™RETAGSINFORMATION ELLER ANNAN EKONOMISK SKADA) HRR™RANDE FRN ANVNDANDET, ELLER OF™RMGAN ATT ANVNDA, DETTA PROGRAM. DETTA GLLER VEN OM PROGRAMMERAREN HAR UPPMRKSAMMATS P M™JLIGHETEN TILL SDAN SKADA. NR DU ANVNDER PROGRAMMET ACCEPTERAR DU AUTOMATISKT DESSA VILLKOR.
+
+  Adress till f”rfattaren
+
+Peter Karlsson
+V„rnsta, Ullers„ter
+S-718 92  FR™VI
+Sverige
+Telefax 0581-32220 mellan 9-12 svensk tid
+Fidonet:  2:204/137.5 och 2:204/136.9
+Internet: Peter.Karlsson@p5.f137.n204.z2.fidonet.org
+          dat95pkn@idt.mdh.se
+

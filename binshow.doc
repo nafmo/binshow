@@ -1,0 +1,161 @@
+        BinShow V1.21                                                Page 1
+        ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+        ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                Ûß          Ûß Ü  Û       Û       Û               TM
+                ÛÜÜÜÜ ÜÜÜÜÜ ÛÜ ÛÜ Û   Û   Û ÜÜÜÜÜ Û Ü Ü ÜÜÜÜ  ÜÜ
+                    Û Û   Û Û  Û  Û   Û   Û Û   Û Û Û Û ÛÜÜÛ  ÛÜÜÜÜ
+                ÜÜÜÜÛ ÛÜÜÜÛ Û  ÛÜ ÛÜÜÜÛÜÜÜÛ ÛÜÜÜÛ Û ßÜß ÛÜÜÜÜ ÜÜÜÜÛ
+              Ä     S     O     F     T     W     A     R     E     Ä
+        ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        BinShow v1.21
+        
+        (c) 1994, 1995: Peter Karlsson
+        A Softwolves Software(TM) release in 1995
+        
+        This file contains some Swedish characters. If you wish to see them
+        correctly,  you  must  use  one  of the code pages 437, 850 or 865.
+        Please  refer  to  your  DOS manual for information about how to do
+        this.
+        
+        Documentation
+        
+          Purpose
+        
+        I  wrote  BinShow  frustrated  over  the  fact that no file viewing
+        programs  are  able to show the file contens in binary. This can be
+        useful, e.g. when font files are to be examined.
+        
+          Status
+        
+        This  program  is  freeware. This means that you have all rights to
+        freely  distribute  and  use  the  program.  The author will though
+        retain  all  rights  to  the program. It may not be modified in any
+        way.  See below for address. When you distribute this program, make
+        sure that all files described in the section "Included files" below
+        are included.
+        
+          User's manual
+        
+        The command line format for BinShow is:
+        
+                BINSHOW [drive:][path]filename [[drive:][path]filename2]
+        or      BINSHOW /REF
+        or      BINSHOW /?
+        
+        where  [drive:][path]filename  is the file that is to be shown, and
+        [drive:][path]filename2  is  the file to compare it to, if you want
+        (you may display one or two files).
+        
+        /? shows the program's quick help screen.
+        
+        /REF loads in a reference table instead of a file.
+        
+        When  you  have  started the program and is inside the file viewer,
+        you   will  see  two  status  lines,  the  file  contens  and  some
+        information  on  the screen. The upper line contains the file name.
+        If  you  press  the  spacebar  it  will change to headlines for the
+        contens.  These  are:  Address  =  current address, Binary = binary
+        contens  (base  2),  Oct.  = octal contens (base 8), Dec. = decimal
+        contens  (base 10), Hex. = hexadecimal contens (base 16) and ASCII,
+        which  shows  the  current ASCII character. In addition this column
+        will contain the special ASCII name, if there is any (available for
+        characters  0-32  and 127). When showing two files, both file names
+        will be shown at the same time (without their path).
+        
+        You may scroll the listing up or down one line with the up and down
+        arrows,  a  page  with  Page Up and Page Down, a kilobyte with ctrl
+        plus  Page  Up  or Page Down or to the beginning or end of the file
+        with  Home  or End. To switch the binary showing between ones/zeros
+        and  stars/spaces  (to  show  pictures),  press Tab. The program is
+        exited by pressing Escape.
+        
+        If  you  think  that  you  are  seeing to little of the file on the
+        screen, you may, if you graphics card allows it, change into a mode
+        with  more lines. On an EGA card there is a 50 line mode and on VGA
+        60 lines. With ANSI.SYS loaded you can enter:
+         MODE CON LINES=l COLS=c
+        where  l is the number of lines and c the columns. Please note that
+        the number of columns must be at least 80.
+        
+          Included files
+        
+        BINSHOW.EXE             The excecutable program.
+        BINSHOW.DOK             Swedish documentation.
+        BINSHOW.DOC             English documentation.
+        FILE_ID.DIZ             Short description of the program.
+        SOFTWOLV.FRM            Ordering form for other Softwolves
+                                products.
+        WOLVES.COM              Softwolves program catalog.
+        
+          Exit codes (errorlevels)
+        
+        Page 2                                                BinShow V1.21
+        ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+        As  of  now  there is only one exit code, that is 1 that tells that
+        the file could not be read.
+        
+          Revision history
+        
+         v1.0 BETA on 3/9/1994:
+        The first released beta version.
+        
+         v1.1 BETA on 9/13/1994:
+        Added  checking of the screen size. The program now stops for modes
+        with  a screen width <> 80. All screen writing now handled directly
+        via BIOS calls.
+        
+         v1.15 on 1/28/1995:
+        Changed  over  to  Martin Kal‚ns MkCrt unit + incorporating some of
+        his  source code to make the program look nicer, run more smoothly,
+        and  be  able  to  run  at  any  screen width. Corrected a spelling
+        mistake that called "ACK" as "ACH".
+        
+         v1.16 on 8/20/1995:
+        The file name is now shown on the screen.
+        
+         v1.20 on 9/2/1995:
+        Two  files can be shown at the same time, and a reference table may
+        be shown.
+        
+         v1.21 on 9/22/1995:
+        If  you're  showing two files, both file names will be shown at the
+        same time. When showing two files, the End key would write the same
+        file size on the screen for both files, this was fixed.
+        
+          Trademarks and copyright
+        
+        I use Martin Kal‚ns MkCrt unit and direct screen writing source. If
+        you  want  more  information  on  this,  contact  him on fidonet at
+        2:201/342.6.
+        
+        Otherwise this program's copyright is hold by Peter Karlsson.
+        
+          Thanks
+        
+        Thanks  to  Peter Korkala <Fidonet 2:204/141.5> for ideas on how to
+        improve the program.
+        
+          Disclaimer of warranty
+        
+        THIS   PROGRAM  IS  DISTRIBUTED  AS-IS.  THE  PROGRAMMER  GIVES  NO
+        WARRANTY,  NOR  EXPRESS  OR  IMPLIED,  AS  TO  THE FUNCTION OF THIS
+        PROGRAM.  IN NO EVENT SHALL THE PROGRAMMER BE LIABLE FOR ANY DAMAGE
+        WHATSOEVER  (INCLUDING,  WITHOUT  LIMITATION,  DAMAGES  FOR LOSS OF
+        BUSINESS   PROFITS,   BUSINESS   INTERRUPTION,   LOSS  OF  BUSINESS
+        INFORMATION,  OR  OTHER  PECUNIARY LOSS) ARISING OUT OF THE USE, OR
+        INABILITY  TO  USE,  THIS  PROGRAM, EVEN IF THE PROGRAMMER HAS BEEN
+        ADVISED  OF THE POSSIBILITY OF SUCH DAMAGES. WHEN USING THE PROGRAM
+        YOU AUTOMATICALLY ACCEPT THESE TERMS.
+        
+          Address to the author
+        
+        Peter Karlsson
+        Varnsta, Ullersater
+        S-718 92  FROVI
+        Sweden
+        Telefax (46) (0)581-32220 between 9-12 CET
+        Fidonet:  2:204/137.5 och 2:204/136.9
+        Internet: Peter.Karlsson@p5.f137.n204.z2.fidonet.org
+                  dat95pkn@idt.mdh.se
